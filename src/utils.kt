@@ -6,5 +6,6 @@ fun readFull(parent: String) = readFile(parent, name = "input_full")
 
 fun runTests(parent: String, solution: (input: List<String>) -> Unit) {
     solution(readTest(parent))
+    println()
     solution(readFull(parent))
 }
